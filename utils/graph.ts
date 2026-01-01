@@ -315,3 +315,4 @@ class GraphGenerator {
 }
 
 export default new GraphGenerator();
+

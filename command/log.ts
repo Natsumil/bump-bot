@@ -4,7 +4,7 @@ import {
   AttachmentBuilder,
 } from 'discord.js';
 import { loadUserData } from '../service/database';
-import graphGenerator from '../utils/temp';
+import graphGenerator from '../utils/graph';
 
 interface ContributionData {
   date: string;
