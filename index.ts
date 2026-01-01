@@ -1,6 +1,16 @@
 import { client } from './bot';
 import { config } from './config';
+import express from 'express';
 
-// ボットをログイン
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('Bot is running!');
+});
+
+app.listen(PORT, () => {
+  console.log(`Web server is listening on port ${PORT}`);
+});
+
 client.login(config.token);
-
